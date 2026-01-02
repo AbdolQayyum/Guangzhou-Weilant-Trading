@@ -1,0 +1,98 @@
+/* PAGE */
+.services-page {
+  background: #ffffff;
+}
+
+/* HERO */
+.services-hero {
+  background: #f3f3f3;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.services-hero h1 {
+  color: #a80000;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.services-hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* CONTAINER */
+.services-container {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+/* ROW */
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.service-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.service-image {
+  flex: 1;
+}
+
+.service-image img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* CONTENT */
+.service-content {
+  flex: 1;
+}
+
+.service-content h3 {
+  color: #0a2342;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.service-content h3::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #a80000;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.service-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-top: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .service-row,
+  .service-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-content h3::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,267 @@
+.contact-page {
+  background: #ffffff;
+}
+
+/* HERO */
+.contact-hero {
+  background: #f3f3f3;
+  padding: 4.5rem 1rem;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  color: #a80000;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: #374151;
+}
+
+/* ================= TRUST BAR ================= */
+.contact-trust {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.8rem 1rem;
+  background: #ffffff;
+  font-weight: 700;
+  color: #0a2342;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.contact-container {
+  max-width: 1150px;
+  margin: 4.5rem auto;
+  padding: 0 1rem;
+}
+
+/* ================= MAIN CARD ================= */
+.contact-box {
+  background: #ffffff;
+  border-radius: 1.2rem;
+  padding: 3rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* ================= QR SECTION ================= */
+.qr-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.qr-item {
+  text-align: center;
+}
+
+.qr-item img {
+  width: 140px;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  margin-bottom: 0.6rem;
+}
+
+.qr-item span {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+/* ================= CONTACT DETAILS ================= */
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2.5rem;
+}
+
+.info-block {
+  border-left: 3px solid #a80000;
+  padding-left: 1.2rem;
+}
+
+.info-block h5 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0a2342;
+  margin-bottom: 0.4rem;
+}
+
+.info-block p {
+  margin: 0;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Address full width */
+.info-block.address {
+  grid-column: span 2;
+}
+
+/* ================= PROCESS ================= */
+.contact-process {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.contact-process h4 {
+  font-size: 1.4rem;
+  color: #a80000;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.contact-process ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.contact-process li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.contact-process li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #a80000;
+  font-weight: 700;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .qr-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .info-block.address {
+    grid-column: span 1;
+  }
+
+  .contact-process ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= EXTRA RESPONSIVE REFINEMENT ================= */
+
+@media (max-width: 1024px) {
+  .contact-container {
+    margin: 3.5rem auto;
+  }
+
+  .contact-box {
+    padding: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* HERO */
+  .contact-hero {
+    padding: 3.5rem 1rem;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .contact-hero p {
+    font-size: 1.05rem;
+  }
+
+  /* TRUST BAR */
+  .contact-trust {
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* QR */
+  .qr-item img {
+    width: 130px;
+  }
+
+  /* CONTACT BOX */
+  .contact-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .info-block h5 {
+    font-size: 1rem;
+  }
+
+  .info-block p {
+    font-size: 0.95rem;
+  }
+
+  /* PROCESS */
+  .contact-process h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* HERO */
+  .contact-hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+
+  /* QR GRID */
+  .qr-grid {
+    gap: 2rem;
+  }
+
+  .qr-item img {
+    width: 115px;
+  }
+
+  .qr-item span {
+    font-size: 0.9rem;
+  }
+
+  /* CONTACT INFO */
+  .contact-info {
+    gap: 1.8rem;
+  }
+
+  .info-block {
+    padding-left: 1rem;
+  }
+
+  /* PROCESS */
+  .contact-process ul {
+    gap: 0.7rem;
+  }
+
+  .contact-process li {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,123 @@
+/* ================= NAVBAR ================= */
+
+.navbar-custom {
+  background: #f3f3f3;
+  border-bottom: 3px solid #a80000;
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+}
+
+/* ================= BRAND ================= */
+
+.navbar-brand-custom {
+  font-weight: 800;
+  color: #a80000;
+  font-size: 1.35rem;
+  white-space: nowrap;
+}
+
+/* ================= LINKS ================= */
+
+.nav-list-custom {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-link-custom {
+  color: #0a2342;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.35rem;
+}
+
+/* RED UNDERLINE */
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #a80000;
+  transition: width 0.25s ease;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  width: 100%;
+}
+
+/* ================= CTA ================= */
+
+.navbar-btn-custom {
+  background: #a80000;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.45rem 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================= HAMBURGER ================= */
+
+.navbar-toggle-custom {
+  display: none;
+  background: #e5e7eb;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 0.75rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .navbar-custom {
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggle-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .navbar-btn-custom {
+    display: none;
+  }
+
+  .nav-list-custom {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-list-custom.nav-list-open {
+    display: flex;
+  }
+
+  .nav-link-custom {
+    padding: 0.9rem 0;
+  }
+
+  .nav-link-custom::after {
+    bottom: 6px;
+  }
+}

@@ -1,0 +1,16 @@
+.cta-btn {
+  background: #ffb200;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 2px 8px rgba(10,35,66,0.07);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-right: 1rem;
+}
+.cta-btn:hover, .cta-btn:focus {
+  background: #0a2342;
+  color: #fff;
+}

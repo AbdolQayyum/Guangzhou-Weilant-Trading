@@ -1,0 +1,117 @@
+.process-page {
+  background: #ffffff;
+}
+
+/* HERO */
+.process-hero {
+  background: #f3f3f3;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.process-hero h1 {
+  color: #a80000;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.process-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* STEPS */
+.process-steps {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.8rem;
+}
+
+.process-card {
+  background: #ffffff;
+  padding: 2rem 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.08);
+}
+
+/* NUMBER */
+.process-number {
+  width: 48px;
+  height: 48px;
+  background: #a80000;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.1rem;
+}
+
+/* CONTENT */
+.process-card h3 {
+  color: #0a2342;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.process-card p {
+  color: #374151;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* CTA */
+.process-cta {
+  background: #f9fafb;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.process-cta h3 {
+  font-size: 1.9rem;
+  color: #0a2342;
+  margin-bottom: 0.8rem;
+}
+
+.process-cta p {
+  color: #374151;
+  margin-bottom: 1.6rem;
+}
+
+.process-cta-btn {
+  display: inline-block;
+  background: #e5e5e5;
+  color: #0a2342;
+  padding: 0.7rem 2.2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.process-cta-btn:hover {
+  background: #d1d1d1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .process-hero h1 {
+    font-size: 2.1rem;
+  }
+}

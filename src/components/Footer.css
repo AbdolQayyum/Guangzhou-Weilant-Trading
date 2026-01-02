@@ -1,0 +1,48 @@
+/* ================= FOOTER ================= */
+
+.footer-custom {
+  background-color: #f3f3f3;           /* LIGHT GRAY */
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-brand {
+  color: #a80000;                      /* RED BRAND */
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.footer-title {
+  color: #0a2342;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.footer-text {
+  color: #374151;                      /* DARK GRAY TEXT */
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-links li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-links a {
+  color: #0a2342;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #6b7280;                      /* SOFT GRAY HOVER */
+}
+
+/* Bottom bar */
+.footer-bottom {
+  background: #e5e5e5;                 /* SLIGHTLY DARKER GRAY */
+  color: #0a2342;
+  padding: 0.9rem 0;
+  font-size: 0.9rem;
+}
