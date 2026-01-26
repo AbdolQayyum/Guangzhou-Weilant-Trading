@@ -6,26 +6,26 @@ import Services from "./Services";
 // HERO BACKGROUND IMAGES
 import AirCurtainImg from "../assets/AirCurtain.jpeg";
 import BracketsImg from "../assets/Brackets.jpeg";
-import CapillaryImg from "../assets/Capillary Tubes.png";
 import DrainPumpImg from "../assets/Drain pump.jpeg";
 import SensorsImg from "../assets/Sensors.jpeg";
 import SoldersImg from "../assets/Solders.jpeg";
 import VacuumImg from "../assets/Vaccum pump.jpeg";
 import AccesoriesImg from "../assets/Ac accessories.jpeg";
+import CopperImg from "../assets/Copper.jpeg";
 
 const images = [
   AirCurtainImg,
   BracketsImg,
-  CapillaryImg,
   DrainPumpImg,
   SensorsImg,
   SoldersImg,
   VacuumImg,
   AccesoriesImg,
+  CopperImg
 ];
 
 const majorTools = [
-  { name: "Capillary Tubes", image: CapillaryImg },
+  { name: "Copper Wire", image: CopperImg },
   { name: "HC Condensate Drain Pump", image: DrainPumpImg },
   { name: "Vacuum Pump", image: VacuumImg },
   { name: "AC Brackets", image: BracketsImg },
