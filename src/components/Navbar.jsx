@@ -25,8 +25,53 @@ const ShadcnNavbar = () => {
 
   return (
     <nav className="navbar-custom">
-      {/* BRAND */}
-      <div className="navbar-brand-custom">{brandText}</div>
+      {/* TOP ROW: Hamburger, Brand, Toggle (mobile only) */}
+      <div className="navbar-top-row">
+        {/* HAMBURGER (mobile only) */}
+        <button
+          className="navbar-toggle-custom"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        {/* BRAND */}
+        <div className="navbar-brand-custom">{brandText}</div>
+
+        {/* LANGUAGE SWITCH (mobile only) */}
+        <div className="navbar-lang-group navbar-lang-group-mobile">
+          <button
+            type="button"
+            className={`navbar-lang-label ${!isZh ? "active" : ""}`}
+            onClick={() => setLanguage("en")}
+          >
+            EN
+          </button>
+
+          <button
+            type="button"
+            className={`navbar-lang-toggle ${isZh ? "is-zh" : ""}`}
+            onClick={toggleLanguage}
+            aria-label="Toggle language between English and Chinese"
+            aria-pressed={isZh}
+          >
+            <span className="navbar-lang-toggle-knob" aria-hidden="true" />
+          </button>
+
+          <button
+            type="button"
+            className={`navbar-lang-label ${isZh ? "active" : ""}`}
+            onClick={() => setLanguage("zh")}
+          >
+            中文
+          </button>
+        </div>
+      </div>
+
+      {/* DESKTOP LAYOUT: Brand, Links, Controls */}
+      {/* BRAND (desktop) */}
+      <div className="navbar-brand-custom navbar-brand-desktop">{brandText}</div>
 
       {/* LINKS */}
       <ul className={`nav-list-custom ${menuOpen ? "nav-list-open" : ""}`}>
@@ -72,10 +117,10 @@ const ShadcnNavbar = () => {
         </li>
       </ul>
 
-      {/* CONTROLS (right side) */}
+      {/* CONTROLS (desktop) */}
       <div className="navbar-controls">
-        {/* LANGUAGE SWITCH */}
-        <div className="navbar-lang-group">
+        {/* LANGUAGE SWITCH (desktop) */}
+        <div className="navbar-lang-group navbar-lang-group-desktop">
           <button
             type="button"
             className={`navbar-lang-label ${!isZh ? "active" : ""}`}
@@ -105,15 +150,6 @@ const ShadcnNavbar = () => {
 
         {/* CTA */}
         <button className="navbar-btn-custom">{navLabels.cta}</button>
-
-        {/* HAMBURGER (mobile only) */}
-        <button
-          className="navbar-toggle-custom"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-        >
-          ☰
-        </button>
       </div>
     </nav>
   );
